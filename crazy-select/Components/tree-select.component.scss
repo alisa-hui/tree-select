@@ -1,0 +1,150 @@
+$disable-background-color: #eceeef;
+$error-border-color: #a94442;
+
+:host.ng-invalid:not(.ng-pristine) span.form-control,
+:host.ng-invalid:not(.ng-untouched) span.form-control {
+  border-color: $error-border-color;
+}
+// Fix Bootstrap dropdown position when inside a input-group
+.input-group>.dropdown {
+  //Instead of relative
+  position: static;
+}
+tree-select{
+    width:100%;
+    .disabled {
+        &>span {
+            cursor: not-allowed;
+        }
+
+        .btn {
+            padding-right: 5px;
+        }
+    }
+
+    ul {
+        height: auto;
+        list-style-type: none;
+        margin-top: 0;
+        max-height: 400px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .selected-container-text {
+        padding-left: 7px;
+        height: 2.5rem;
+    }
+
+    .selected-container-item {
+        padding-left: 2px;
+    }
+
+    .selected-item-text {
+        font-size: 14px;
+        margin: 3px;
+    }
+
+    .selected-item-item {
+        font-size: 14px;
+        margin: 2px;
+        outline: 0;
+    }
+
+    .more-items-icon {
+        opacity: 0.5;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        bottom: 23px;
+        z-index: 100;
+    }
+
+    .close {
+        font-size: 18px;
+        line-height: .75;
+        margin-left: 5px;
+        padding-top: 3px;
+        position: absolute;
+        z-index: 50;
+    }
+
+    .caret {
+        height: 10px;
+        margin-top: -2px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width:10px;
+    }
+
+    .btn {
+        display: table;
+        padding-right: 20px;
+    }
+}
+.orgOper span.selected-container-text{
+    border-radius: 2px!important;
+    height:30px;
+    width:100%;
+    border-color:#d2d2d2;
+    overflow: hidden;
+    line-height: 10px;
+    color:#666;
+    background-color:#e8e8e8;
+}
+tree-select .caret{
+    height: 10px;
+    margin-top: -2px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width:10px;
+    z-index: 9999;
+}
+.dropdown.open{
+    height:2.5rem;
+}
+.dropdown-menu.select-input{
+    display: block;
+    width:100%;
+}
+.dropdown-menu{
+    z-index: 1051
+}
+.select-input input{
+    width:80%!important;
+    outline: none;
+    margin:10px auto!important;
+}
+.select2-selection__arrow b {
+    border-color: #888 transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    z-index:10;
+}
+.select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+.select2-arrow_open{
+    border-color: transparent transparent #888!important;
+    border-width: 0 4px 5px!important;
+}
+.select-parent .dropdown-menu.select-input{
+    width:200%;
+    max-height:400px;
+}
+.select-parent tree-select ul{
+    max-height:400px;
+}
